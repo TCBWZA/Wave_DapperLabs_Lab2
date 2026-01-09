@@ -87,12 +87,12 @@ sqlcmd -S localhost -d DapperLabs -i truncate-database.sql
 
 **With SQL Authentication:**
 ```cmd
-sqlcmd -S localhost -U sa -P YOUR_PASSWORD -d DapperLabs -i truncate-database.sql
+sqlcmd -S localhost -U YourUsername -P YOUR_PASSWORD -d DapperLabs -i truncate-database.sql
 ```
 
 **From Project Directory:**
 ```cmd
-cd D:\Users\tbw_\source\repos\DapperLabs_Lab2\DapperLabs_Lab2
+cd path\to\your\DapperLabs_Lab2
 sqlcmd -S localhost -d DapperLabs -i truncate-database.sql
 ```
 
@@ -533,10 +533,10 @@ Sqlcmd: Error: Error occurred while opening or operating on file 'truncate-datab
 cd
 
 # Navigate to project directory
-cd D:\Users\tbw_\source\repos\DapperLabs_Lab2\DapperLabs_Lab2
+cd path\to\your\DapperLabs_Lab2
 
 # Use full path
-sqlcmd -S localhost -d DapperLabs -i "D:\Users\tbw_\source\repos\DapperLabs_Lab2\DapperLabs_Lab2\truncate-database.sql"
+sqlcmd -S localhost -d DapperLabs -i "path\to\your\DapperLabs_Lab2\truncate-database.sql"
 ```
 
 ### Issue: Permission Denied

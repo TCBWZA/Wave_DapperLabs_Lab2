@@ -134,7 +134,7 @@ DapperLabs_Lab2/
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Database=DapperLabs;User Id=sa;Password=YOUR_PASSWORD;TrustServerCertificate=True"
+    "DefaultConnection": "Server=localhost;Database=DapperLabs;User Id=YourUsername;Password=YOUR_PASSWORD;TrustServerCertificate=True"
   },
   "SeedSettings": {
     "EnableSeeding": true,

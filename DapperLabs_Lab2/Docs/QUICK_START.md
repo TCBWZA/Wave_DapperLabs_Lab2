@@ -14,7 +14,7 @@ Edit `appsettings.json` and update the connection string:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Database=DapperLabs;User Id=sa;Password=YOUR_PASSWORD;TrustServerCertificate=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=localhost;Database=DapperLabs;User Id=YourUsername;Password=YOUR_PASSWORD;TrustServerCertificate=True;MultipleActiveResultSets=true"
   }
 }
 ```
@@ -23,7 +23,7 @@ Edit `appsettings.json` and update the connection string:
 
 **SQL Server Authentication:**
 ```
-Server=localhost;Database=DapperLabs;User Id=sa;Password=YOUR_PASSWORD;TrustServerCertificate=True;MultipleActiveResultSets=true
+Server=localhost;Database=DapperLabs;User Id=YourUsername;Password=YOUR_PASSWORD;TrustServerCertificate=True;MultipleActiveResultSets=true
 ```
 
 **Windows Authentication:**
@@ -159,7 +159,7 @@ A network-related or instance-specific error occurred while establishing a conne
 
 **Error:**
 ```
-Login failed for user 'sa'
+Login failed for user 'YourUsername'
 ```
 
 **Solutions:**
@@ -207,7 +207,7 @@ The certificate chain was issued by an authority that is not trusted
 **Solution:**
 Ensure `TrustServerCertificate=True` is in your connection string:
 ```
-Server=localhost;Database=DapperLabs;User Id=sa;Password=YOUR_PASSWORD;TrustServerCertificate=True
+Server=localhost;Database=DapperLabs;User Id=YourUsername;Password=YOUR_PASSWORD;TrustServerCertificate=True
 ```
 
 ## Manual Database Setup (Alternative)

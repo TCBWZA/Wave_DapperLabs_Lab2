@@ -63,7 +63,7 @@ sqlcmd -S localhost -d DapperLabs -i truncate-database.sql
 
 **Or with authentication:**
 ```cmd
-sqlcmd -S localhost -U sa -P YOUR_PASSWORD -d DapperLabs -i truncate-database.sql
+sqlcmd -S localhost -U YourUsername -P YOUR_PASSWORD -d DapperLabs -i truncate-database.sql
 ```
 
 **Features:**
@@ -370,7 +370,7 @@ Error: A network-related or instance-specific error occurred
 **Solution:**
 1. Verify SQL Server is running
 2. Check connection string in appsettings.json
-3. Test connection: `sqlcmd -S localhost -U sa -P YOUR_PASSWORD`
+3. Test connection: `sqlcmd -S localhost -U YourUsername -P YOUR_PASSWORD`
 
 ### Issue: Execution Policy Error
 
