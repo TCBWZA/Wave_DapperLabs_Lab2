@@ -162,12 +162,11 @@ Set `ASPNETCORE_ENVIRONMENT` to control behavior:
 
 ## Documentation
 
-- **[AUTO_LAUNCH_GUIDE.md](AUTO_LAUNCH_GUIDE.md)** - Scripts to auto-open browser with API
-- **[TRUNCATE_DATABASE_GUIDE.md](TRUNCATE_DATABASE_GUIDE.md)** - Clear all data (PowerShell scripts)
-- **[TRUNCATE_SQL_GUIDE.md](TRUNCATE_SQL_GUIDE.md)** - Clear all data (T-SQL scripts)
+- **[TRUNCATE_DATABASE_GUIDE.md](DBTools/TRUNCATE_DATABASE_GUIDE.md)** - Clear all data (PowerShell scripts)
+- **[TRUNCATE_SQL_GUIDE.md](DBTools/TRUNCATE_SQL_GUIDE.md)** - Clear all data (T-SQL scripts)
 - **[API_GUIDE.md](API_GUIDE.md)** - Complete API documentation with examples
-- **[CODE_ANNOTATIONS.md](CODE_ANNOTATIONS.md)** - Guide to [API] and [DAPPER] code annotations
-- **[OUTPUT_CLAUSE_UPDATE.md](OUTPUT_CLAUSE_UPDATE.md)** - OUTPUT vs SCOPE_IDENTITY explanation
+- **[CODE_ANNOTATIONS.md](Docs/CODE_ANNOTATIONS.md)** - Guide to [API] and [DAPPER] code annotations
+- **[OUTPUT_CLAUSE.md](Docs/OUTPUT_CLAUSE.md)** - OUTPUT vs SCOPE_IDENTITY explanation
 - **[QUICK_START.md](Docs/QUICK_START.md)** - Getting started guide
 - **[EF_CORE_VS_DAPPER.md](Docs/EF_CORE_VS_DAPPER.md)** - EF Core vs Dapper comparison
 - **[PROJECT_SUMMARY.md](Docs/PROJECT_SUMMARY.md)** - Project overview
@@ -209,10 +208,10 @@ sqlcmd -S localhost -d DapperLabs -i truncate-database-quick.sql
 
 **To re-seed after truncate:**
 1. Ensure `"EnableSeeding": true` in appsettings.json
-2. Run the API: `.\run.ps1`
+2. Run the API: `dotnet run`
 3. Data will be automatically regenerated
 
-See **[TRUNCATE_DATABASE_GUIDE.md](TRUNCATE_DATABASE_GUIDE.md)** for complete documentation.
+See **[TRUNCATE_DATABASE_GUIDE.md](DBTools/TRUNCATE_DATABASE_GUIDE.md)** for complete documentation.
 
 ## Database Schema
 
@@ -371,4 +370,4 @@ This is a learning project. Feel free to:
 
 This is a learning/demonstration project.
 
----
+------
